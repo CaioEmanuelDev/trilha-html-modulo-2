@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Clínica Médica São Francisco</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Menu padrão em todas as páginas -->
+        <nav class="menu" aria-label="Menu Principal">
+            <ul>
+                <li><a href="paginaInicial.html"> Página Inicial</a></li>  
+                <li><a href="sobre.html"> Sobre</a></li>  
+                <li><a href="contato.html"> Contato</a></li>  
+                <li><a href="horarioDeAtendimento.html"> Horário de Atendimento</a></li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <!-- 1. Imagem diferente no Header para a tela de contato -->
+            <header class="header">
+               <img src="assets/images-04.jfif" alt="Imagem de capa da tela de Contato" width="1000" height="400" />
+            </header>
+    
+            <!-- 2. Content com informações, mapa e formulário -->
+            <article class="content">
+                <h1>Fale Conosco</h1>
+                
+                <!-- Informações de Contato e Endereço -->
+                <section class="info-contato">
+                    <h2>Canais de Atendimento</h2>
+                    <p><strong>Telefone Fixo:</strong> (11) 3003-1234</p>
+                    <p><strong>WhatsApp / Celular:</strong> (11) 99999-5555</p>
+                    
+                    <h2>Endereço Completo</h2>
+                    <address>
+                        Av. Paulista, 123 - Bela Vista, São Paulo - SP, 01310-100
+                    </address>
+                </section>
+
+                <!-- Iframe do Google Maps apontando para a Av. Paulista, 123 -->
+                <section class="mapa-localizacao">
+                    <h2>Como Chegar</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467690.14388859045!2d-46.924958362693495!3d-23.68206355105361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-PT!2sbr!4v1783432226906!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </section>
+
+                <!-- Formulário de Contato -->
+                <section class="formulario-contato">
+                    <h2>Envie uma Mensagem</h2>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assunto">Assunto:</label>
+                            <input type="text" id="assunto" name="assunto" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-botoes">
+                            <button type="submit" class="btn-enviar">Enviar</button>
+                            <button type="reset" class="btn-limpar">Limpar</button>
+                        </div>
+                    </form>
+                </section>
+            </article>
+    
+            <!-- 3. Footer padrão em todas as páginas -->
+            <footer class="footer">
+                <address>
+                    <p><em>Av. Paulista, 123 - Bela Vista, São Paulo - SP, 01310-100</em></p>
+                    <p><em>Telefone: (11) 3003-1234</em></p>
+                    <p><em>Email: contato@clinicamedica.med</em></p>
+                </address>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
